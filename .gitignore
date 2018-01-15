@@ -2,3 +2,8 @@
 *.gem
 *.rbc
 /.config
+/.idea
+*.iml
+*.byebug_history
+Gemfile.lock
+db.rb
