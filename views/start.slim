@@ -1,0 +1,25 @@
+h1 Welcome #{@name}
+h3 Consumed calories today: #{@consumed}. Which is #{@of_total}% of daily recomended calory intake.
+
+- if @items.any?
+  select id="foods"
+    option disabled="" selected="" Foods
+    - for item in @items
+      option value="#{item.id}" #{item.name}
+  select id="amount"
+    option disabled="" selected="" Amount
+    - 15.times do |time|
+      option value="#{time+1}" #{time+1}
+- else
+  p
+    | No items found.  Please add some inventory.
+           Thank you!
+
+button onclick="add_cal()" Add Calories to total!
+
+form method="post" action="add_cal" id="food_form"
+  input name="id_food" id="id_food" type="hidden"
+  input name="amount_food"  id="amount_food" type="hidden"
+
+form method="post" action="logout"
+  button type="submit" Logout
