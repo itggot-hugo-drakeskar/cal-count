@@ -8,7 +8,7 @@ A webserver that keeps track of what you have eaten.
 ## ER-Chart
 https://imgur.com/a/S4jT3
 
-##To-Do
+## To-Do
 * Add login system
 * Add way to add dishes
 *Create user friendly interface.
