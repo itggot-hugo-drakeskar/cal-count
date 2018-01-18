@@ -1,5 +1,5 @@
 # cal-count
-A webserver that keeps track of what you have eaten.
+A webserver that keeps track of what you have eaten. The webserver handles multiple users with secure password storage.
 ## Features
 * Keep track of eaten meals and consumed calories
 * A chart that shows past values over time
