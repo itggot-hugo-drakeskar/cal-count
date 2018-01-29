@@ -5,5 +5,6 @@ class Controller
 
   def self.all
     query = "SELECT * FROM#{@config[0]}"
+    p query
   end
 end
